@@ -3,4 +3,14 @@
 {% block title 'About Us | ' ~ parent() %}
 
 
-{% block body %}{% endblock %}
+{% block body %}
+	<img src="{{ asset('/images/user.svg') }}" alt="user icon" width="200" height="200">
+
+	<h1>
+		Built with &hearts; by Mokrane Rachedi
+	</h1>
+
+	<p>
+		<a href="{{ path('app_pages_index') }}">Revenir à la page d'accueil</a>
+	</p>
+{% endblock %}
