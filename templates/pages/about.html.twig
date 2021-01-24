@@ -4,13 +4,17 @@
 
 
 {% block body %}
-	<img src="{{ asset('/images/user.svg') }}" alt="user icon" width="200" height="200">
+	<img src="{{ asset('/images/user.svg') }}" alt="user icon" width="200" height="200" class="rounded-full shadow-lg">
 
-	<h1>
-		Built with &hearts; by Mokrane Rachedi
+	<h1 class="my-5 text-xl text-gray-800 font-semibold">
+
+		Built with
+		<span class="text-red-500">&hearts;</span>
+		by Mokrane Rachedi
+
 	</h1>
 
 	<p>
-		<a href="{{ path('app_pages_index') }}">Revenir à la page d'accueil</a>
+		<a href="{{ path('app_pages_index') }}" class="text-blue-500 hover:text-blue-600 underline">Revenir à la page d'accueil</a>
 	</p>
 {% endblock %}

@@ -3,10 +3,12 @@
 {% block title 'Hello City !' %}
 
 {% block body %}
-	<img src="{{ asset('/images/Berber_flag.png') }}" alt="Berber flag" width="200" height="200">
+	<img src="{{ asset('/images/Berber_flag.png') }}" alt="Berber flag" width="300" height="200" class="rounded-md shadow-lg">
 
-	<h1>Hello from Kabylia !</h1>
-	<p>It's currently
+
+	<h1 class="my-5 text-3xl sm:text-3xl font-semibold text-gray-800">Hello from Kabylia !</h1>
+
+	<p class="text-lg text-gray-800">It's currently
 		{{ 'now'|date('h:i A') }}.
 	</p>
 {% endblock %}
